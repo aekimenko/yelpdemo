@@ -52,3 +52,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'rails_12factor', group: :production
 # Adding Postgres gem for Heroku
 gem 'pg', group: :production
+# Add Carrierwave to install files
+gem 'carrierwave'
+# Add fog to link Carrierwave with online file storage
+gem "fog-aws"
+# Add figaro gem to protect security keys
+gem 'figaro'
