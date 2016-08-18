@@ -58,3 +58,5 @@ gem 'carrierwave'
 gem "fog-aws"
 # Add figaro gem to protect security keys
 gem 'figaro'
+# Imagemagick Ruby wrapper to work with images
+gem "mini_magick"
