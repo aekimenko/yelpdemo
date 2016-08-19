@@ -60,3 +60,5 @@ gem "fog-aws"
 gem 'figaro'
 # Imagemagick Ruby wrapper to work with images
 gem "mini_magick"
+# Add Devise gem to enable user authentication
+gem 'devise'
