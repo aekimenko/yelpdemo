@@ -1,31 +1,42 @@
 <!-- <p id="notice"><%= notice %></p> -->
 <div class = "row">
 	<div class = "col-md-3">
-	<%= image_tag @restaurant.image_url %>
+		<%= image_tag @restaurant.image_url %>
 
-	<h2>
-	  <%= @restaurant.name %>
-	</h2>
+		<h2>
+		  <%= @restaurant.name %>
+		</h2>
 
-	<div class = "star-rating" data-score = <%= @avg_rating %> ></div>
-	<p><%= "#{@reviews.length} reviews" %></p>
+		<div class = "star-rating" data-score = <%= @avg_rating %> ></div>
+		<p><%= "#{@reviews.length} reviews" %></p>
 
-	<p>
-	  <strong>Address:</strong>
-	  <%= @restaurant.address %>
-	</p>
+		<p>
+		  <strong>Address:</strong>
+		  <%= @restaurant.address %>
+		</p>
 
-	<p>
-	  <strong>Phone:</strong>
-	  <%= @restaurant.phone %>
-	</p>
+		<p>
+		  <strong>Phone:</strong>
+		  <%= @restaurant.phone %>
+		</p>
 
-	<p>
-	  <strong>Website:</strong>
-	  <%= link_to @restaurant.website, @restaurant.website %>
-	</p>
+		<p>
+		  <strong>Website:</strong>
+		  <%= link_to @restaurant.website, @restaurant.website %>
+		</p>
 
-	<%= link_to "Write a review", new_restaurant_review_path(@restaurant), class: "btn btn-primary" %>
+		<%= link_to "Write a review", new_restaurant_review_path(@restaurant), class: "btn btn-primary" %>
+
+		<br>
+		<br>
+
+		<iframe
+	  		width="230"
+		  	height="230"
+		  	frameborder="0" style="border:0"
+		  	src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBeDw7rxr_OVimdnlioWsgUgfhEzk5jJaE
+		    	&q=<%= @restaurant.address.parameterize %>&zoom=14" allowfullscreen>
+		</iframe>
 	</div>
 
 	<div class = "col-md-9">
