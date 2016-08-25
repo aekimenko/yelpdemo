@@ -62,3 +62,5 @@ gem 'figaro'
 gem "mini_magick"
 # Add Devise gem to enable user authentication
 gem 'devise'
+# Add Searchkick for search
+gem 'searchkick'
